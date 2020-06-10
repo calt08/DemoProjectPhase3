@@ -56,19 +56,19 @@ public class MainPage {
 	
 	public void goToITFoundation() {
 		driver.findElement(solutionMenuById).click();
-		driver.findElement(iTDropdown);
+		driver.findElement(iTDropdown).click();
 		driver.findElement(iTFoundationById).click();
 	}
 	
 	public void goToITProtection() {
 		driver.findElement(solutionMenuById).click();
-		driver.findElement(iTDropdown);
+		driver.findElement(iTDropdown).click();
 		driver.findElement(iTProtectionById).click();
 	}
 	
 	public void goToCompareProducts() {
 		driver.findElement(solutionMenuById).click();
-		driver.findElement(iTDropdown);
+		driver.findElement(iTDropdown).click();
 		driver.findElement(compareProductsById).click();
 	}
 	
@@ -92,7 +92,11 @@ public class MainPage {
 		driver.findElement(blogById).click();
 	}
 	
-	//SoME MORE
-
+	public void goToCaseStudies() {
+		driver.findElement(caseStudiesById).click();
+	}
 	
+	public void goToCareers() {
+		driver.findElement(careersById).click();
+	}	
 }

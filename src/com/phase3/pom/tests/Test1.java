@@ -36,6 +36,79 @@ class Test1 {
 		assertEquals(basePage.getTitle(),"Tech-enabled Innovation");
 	}
 	
+	@Test
+	void ITBussinessTransfomation_doesLoad() {
+		mainPage.goToITBussinessTransf();
+		assertEquals(basePage.getTitle(),"You’re moving fast. We’ve got a board-level vCIO to get you there faster.");	
+	}
+	
+	@Test
+	void CustomSoftwareDevelpment_doesLoad() {
+		mainPage.goToCustomSoftDev();
+		assertEquals(basePage.getTitle(),"Custom Software Development");		
+	}
+	
+	@Test
+	void AgentOfChange_doesLoad() {
+		mainPage.goToAgentOfChange();
+		assertEquals(basePage.getTitle(),"Staff Augmentation");
+	}
+	
+	@Test
+	void ITFoundation_doesLoad() {
+		mainPage.goToITFoundation();
+		assertEquals(basePage.getTitle(),"IT Support");
+	}
+	
+	@Test
+	void ITProtection_doesLoad() {
+		mainPage.goToITProtection();
+		assertEquals(basePage.getTitle(),"IT Protection & Support");
+	}
+	
+	@Test
+	void CompareProducts_doesLoad() {
+		mainPage.goToCompareProducts();
+		assertEquals(basePage.getTitle(),"IT Support Services");
+	}
+	
+	@Test
+	void ITNetwork_doesLoad() {
+		mainPage.goToITNetwork();
+		assertEquals(basePage.getTitle(),"From design to implementation and support.\n" 
+				+ "Full-Service Network Solutions that increase your business’ stability and security.");
+	}
+	
+	@Test
+	void AboutUS_doesLoad() {
+		mainPage.goToAboutUs();
+		assertEquals(basePage.getTitle(),"We’re driven by an earnest belief");
+	}
+	
+	@Test
+	void PointOfDifferentiation_doesLoad() {
+		mainPage.goToPointOfDifferentiation();
+		assertEquals(basePage.getSubTitle(),"The GBH Difference");
+	}
+	
+	@Test
+	void Blog_doesLoad() {
+		mainPage.goToBlog();
+		assertEquals(basePage.getTitle(),"Our latest insights on the strategic use of tech to amplify your impact.");
+	}
+	
+	@Test
+	void CaseStudies_doesLoad() {
+		mainPage.goToCaseStudies();
+		assertEquals(basePage.getTitle(),"We deliver market-ready tech that defines industries.");
+	}
+	
+	@Test
+	void Careers_doesLoad() {
+		mainPage.goToCareers();
+		assertEquals(basePage.getTitle(),"We do meaningful work");
+	}
+	
 	@AfterEach
 	protected void tearDown() {
 	    driver.quit();
