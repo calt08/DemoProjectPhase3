@@ -19,6 +19,6 @@ public class BasePage {
 	public String getSubTitle() {
 		return driver.findElement(subTitleByXpath).getText();
 	}
-	
-
 }
+
+

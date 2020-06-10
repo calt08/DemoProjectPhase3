@@ -26,3 +26,4 @@ hs_err_pid*
 .classpath
 .project
 /.settings/
+/chromedriver_win32/

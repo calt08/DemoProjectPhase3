@@ -10,7 +10,8 @@ public class driverInitiante {
 	WebDriver driver;
 	
 	public WebDriver initiante() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\cesar\\Desktop\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\cesar\\Desktop\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\src\\chromedriver_win32\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
